@@ -15,16 +15,6 @@ function Repository() {
 
   const [loading, setLoading] = useState(false);
 
-  type Error = {
-    isError: boolean;
-    message: string;
-  };
-
-  const [error, setError] = useState<Error>({
-    isError: false,
-    message: "",
-  });
-
   useEffect(() => {
     async function getRepos() {
       try {
@@ -44,22 +34,11 @@ function Repository() {
       } catch (error) {
         setRepo(null);
         setLoading(false);
-        handleError(error.response?.status);
       }
     }
 
     getRepos();
   }, []);
-
-  const errorMessages: Record<number, string> = {
-    404: "Nenhum repositório encontrado!",
-    500: "Erro interno do servidor, tente novamente mais tarde",
-  };
-
-  function handleError(status: number) {
-    const message: string = errorMessages[status] || "Erro desconhecido";
-    setError({ isError: true, message });
-  }
 
   if (!repos && loading) return <Loader />;
 
@@ -81,7 +60,6 @@ function Repository() {
       )}
 
       {repos && repos.length === 0 && <p>Não há repositórios</p>}
-      {error.isError && <p>{error.message}</p>}
     </div>
   );
 }
