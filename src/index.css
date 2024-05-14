@@ -1,0 +1,29 @@
+:root{
+  --background-gradient: linear-gradient(60deg, #1f1c2c, #29323c);
+  --text-color: #fff;
+  --primary-background-blue: #2b3566;
+  --secundary-background-blue: #644aff;
+  --primary-color-green: #02b5a0;
+  --border-color: #9da5d1;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--text-color);
+}
+
+body{
+  background: var(--background-gradient);
+  padding: 2em 0em;
+}
+
+p{
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+}
