@@ -1,0 +1,90 @@
+.repo {
+  width: 100%;
+  background-color: #0e1129;
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  padding: 2em;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4em;
+}
+
+.stats {
+  display: flex;
+  gap: 1em;
+}
+
+.stats div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4em;
+  border: 2px solid var(--border-color);
+  border-radius: 3px;
+  padding-right: 0.4em;
+}
+
+.stats svg {
+  background-color: #4ed8c7;
+  font-size: 1.8em;
+  padding: 2px;
+}
+
+.container_btn{
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
+}
+
+.container_btn button{
+  background-color: green;
+  border: none;
+  cursor: pointer;
+}
+
+.repo_btn {
+  display: flex;
+  width: 180px;
+  height: 35px;
+  font-size: 1em;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em 1em;
+  color: #9da5d1;
+  background-color: #2b3566;
+  border-radius: 5px;
+  gap: 0.5em;
+  opacity: 0.9;
+}
+
+.repo_btn:hover {
+  opacity: 1;
+}
+
+.copied_message {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+@media(max-width: 550px){
+  .container_btn{
+    flex-direction: column;
+  }
+}
