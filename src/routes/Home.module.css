@@ -1,0 +1,9 @@
+.home{
+    width: 500px;
+}
+
+@media(max-width: 550px){
+    .home{
+        width: 95%;
+    }
+}
