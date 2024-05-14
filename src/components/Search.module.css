@@ -1,0 +1,60 @@
+.search_user {
+  text-align: center;
+  background-color: #2b3566;
+  padding: 2em;
+  border-radius: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.user_input {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.user_input input {
+  color: #000;
+  width: 250px;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid #2b3566;
+  padding: 5px;
+  outline: none;
+}
+
+.user_input input:focus {
+  border: 2px solid blue;
+}
+
+.user_input button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background-color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.user_input button:hover {
+  background-color: #ffffffb6;
+}
+
+.user_input button svg path {
+  color: #000;
+}
+
+@media(max-width: 450px){
+  .search_user h2{
+    font-size: 1.3em;
+  }
+
+  .search_user p{
+    font-size: .9em;
+  }
+}
