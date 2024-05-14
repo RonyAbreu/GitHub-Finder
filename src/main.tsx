@@ -8,7 +8,6 @@ import Repository from "./routes/Repository.tsx";
 
 import "./index.css";
 
-
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <HashRouter>
