@@ -1,0 +1,19 @@
+.not_found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.not_found a {
+  text-align: center;
+  padding: 1em;
+  background-color: #644aff;
+  border-radius: 5px;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.not_found a:hover{
+  opacity: 1;
+}
