@@ -1,5 +1,5 @@
 :root{
-  --background-gradient: linear-gradient(60deg, #1f1c2c, #29323c);
+  --background-color: #1f1c2c;
   --text-color: #fff;
   --primary-background-blue: #2b3566;
   --secundary-background-blue: #644aff;
@@ -16,7 +16,7 @@
 }
 
 body{
-  background: var(--background-gradient);
+  background: var(--background-color);
   padding: 2em 0em;
 }
 

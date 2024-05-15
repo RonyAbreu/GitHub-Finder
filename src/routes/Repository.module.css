@@ -14,6 +14,8 @@
 }
 
 .back_btn {
+  width: 100px;
+  height: 30px;
   position: fixed;
   top: 1em;
   right: 1em;
@@ -24,6 +26,9 @@
   border: none;
   border-radius: 5px;
   opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .back_btn:hover {
@@ -53,7 +58,7 @@
   }
 
   .back_btn {
-    top: 93vh;
+    top: auto;
     bottom: 1em;
   }
 }
