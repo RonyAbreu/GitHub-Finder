@@ -14,6 +14,7 @@ function Home() {
   const [loading, setLoading] = useState(false);
 
   async function searchUser(username: string) {
+    setError(false);
     try {
       setLoading(true);
       const response = await apiFetch.get(`/${username}`);
